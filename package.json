@@ -2,14 +2,19 @@
   "name": "first_project",
   "version": "1.0.0",
   "description": "Pierwszy projekt z JS6",
-  "main": "index.js",
+  "main": "bundle.js",
+  "jsnext:main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "rollup": "rollup -c"
   },
   "author": "Grzegorz Kielar",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^3.11.0"
+    "eslint": "^3.11.0",
+    "rollup": "^0.36.4",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {
     "chalk": "^1.1.3"

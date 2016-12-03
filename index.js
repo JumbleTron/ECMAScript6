@@ -2,7 +2,8 @@
 
 'use strict';
 
-const chalk = require('chalk');
+import chalk from 'chalk';
+
 const Logger = {
 	success(msg) {
 		console.log(chalk.green.bold('OK:'), msg);
@@ -18,7 +19,4 @@ const Logger = {
 	},
 };
 
-Logger.success('Działa');
-Logger.error('Nie działa');
-Logger.warning('To tylko ostrzeżenie');
-Logger.info('Wszystko działa');
+export default Logger;
