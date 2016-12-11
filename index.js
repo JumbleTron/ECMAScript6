@@ -6,16 +6,16 @@ import chalk from 'chalk';
 
 const Logger = {
 	success(msg) {
-		console.log(chalk.green.bold('OK:'), msg);
+		console.log( '%c OK:' , 'color: green;font-weight: bold;', msg );
 	},
 	error(msg) {
-		console.log(chalk.red.bold('Error:'), msg);
+		console.error( '%c Error:', 'color: red;font-weight: bold;', msg );
 	},
 	warning(msg) {
-		console.log(chalk.yellow.bold('Warning:'), msg);
+		console.warn( '%c Warning:', 'color: yellow;font-weight: bold;', msg );
 	},
 	info(msg) {
-		console.log(chalk.blue.bold('Info:'), msg);
+		console.log( '%c Info:', 'color: blue;font-weight: bold;', msg );
 	},
 };
 
